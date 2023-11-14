@@ -24,13 +24,14 @@ import { Icon } from "astro-icon";
   openBtn.addEventListener("click", function () {
     openBtn.classList.toggle("hidden");
     closeBtn.classList.toggle("hidden");
-    mobileMenu.classList.toggle("hidden");
-    mobileMenu.classList.toggle("flex");
+    mobileMenu.classList.add("flex");
+    mobileMenu.classList.remove("hidden");
   });
 
   closeBtn.addEventListener("click", function () {
     closeBtn.classList.toggle("hidden");
     openBtn.classList.toggle("hidden");
-    mobileMenu.classList.toggle("hidden");
+    mobileMenu.classList.remove("flex");
+    mobileMenu.classList.add("hidden");
   });
 </script>
