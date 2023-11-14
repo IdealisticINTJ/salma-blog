@@ -1,0 +1,39 @@
+---
+import Navigation from "../components/Navigation.astro";
+import { courseSite } from "../config";
+import MenuButton from "./MenuButton.astro";
+import SiteLogo from "./SiteLogo.astro";
+import ThemeIcon from "./ThemeIcon.astro";
+---
+
+<header class="w-full px-4 my-4 lg:px-0 box-border overflow-hidden">
+  <div
+    class="rounded-xl bg-white/30 dark:bg-slate-500/20 backdrop-blur-md border border-white/30 dark:border-gray-300/20 h-auto"
+  >
+    <div class="flex p-4 items-center">
+      <div class="pr-6">
+        <SiteLogo />
+      </div>
+      <div class="flex justify-between flex-grow">
+        <div class="hidden lg:flex items-center gap-6">
+          <Navigation />
+        </div>
+        <div class="flex gap-4 items-center grow justify-end">
+          <a
+            href={courseSite}
+            class="uppercase font-bold animate-pulse text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 cursor-pointer"
+            target="_blank"
+          >
+            Courses
+          </a>
+          <ThemeIcon />
+          <MenuButton />
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden lg:hidden flex-col gap-4 px-4 py-3" id="mobile-menu">
+      <Navigation />
+    </div>
+  </div>
+</header>

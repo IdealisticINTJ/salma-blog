@@ -1,0 +1,37 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<button class="lg:hidden" id="open-menu-btn">
+  <Icon
+    class="text-gray-900 dark:text-gray-50 dark:hover:text-gray-300 hover:text-gray-600 transition fade ease-in fill-current w-5"
+    name="ion:menu"
+  />
+</button>
+
+<button class="hidden lg:hidden" id="close-menu-btn">
+  <Icon
+    class="text-gray-900 dark:text-gray-50 dark:hover:text-gray-300 hover:text-gray-600 transition fade ease-in fill-current w-5"
+    name="ion:close"
+  />
+</button>
+
+<script>
+  const openBtn = document.getElementById("open-menu-btn");
+  const closeBtn = document.getElementById("close-menu-btn");
+
+  const mobileMenu = document.getElementById("mobile-menu");
+  openBtn.addEventListener("click", function () {
+    openBtn.classList.toggle("hidden");
+    closeBtn.classList.toggle("hidden");
+    mobileMenu.classList.add("flex");
+    mobileMenu.classList.remove("hidden");
+  });
+
+  closeBtn.addEventListener("click", function () {
+    closeBtn.classList.toggle("hidden");
+    openBtn.classList.toggle("hidden");
+    mobileMenu.classList.remove("flex");
+    mobileMenu.classList.add("hidden");
+  });
+</script>

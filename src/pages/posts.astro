@@ -1,0 +1,44 @@
+---
+import PostCard from "../components/PostCard.astro";
+import { pageTitle } from "../config";
+import Layout from "../layouts/Layout.astro";
+const posts = await Astro.glob("./*.mdx");
+const allPosts = posts.sort(function (post_x, post_y) {
+  const x = parseInt(post_x.frontmatter.id);
+  const y = parseInt(post_y.frontmatter.id);
+  if (x < y) {
+    return 1;
+  }
+  if (x > y) {
+    return -1;
+  }
+  return 0;
+});
+---
+
+<Layout pageTitle={pageTitle}>
+  <div>
+    <div class="mt-4 w-full box-border px-4 lg:px-0">
+      <div class="w-100">
+        <div class="flex justify-between content-center">
+          <p class="uppercase text-lg font-bold tracking-widest text-gray-600">
+            All Posts
+          </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+          {
+            allPosts.map((post) => (
+              <PostCard
+                image={post.frontmatter.image.url}
+                url={post.url}
+                title={post.frontmatter.title}
+                description={post.frontmatter.description}
+                alt={post.frontmatter.alt}
+              />
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

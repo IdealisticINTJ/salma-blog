@@ -1,0 +1,32 @@
+---
+import BaseLayout from "./Layout.astro";
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout pageTitle={frontmatter.title}>
+  <article class="w-full text-white mx-auto my-12 {{post_class}}">
+    <h1 class="font-bold text-4xl text-gray-800 dark:text-white text-center">
+      {frontmatter.title}
+    </h1>
+    <div class="flex flex-col mt-8">
+      <div class="mx-4 max-w-full lg:mx-0">
+        <img
+          class="w-full block m-auto rounded-[32px] shadow-xl select-none pointer-events-none"
+          src={frontmatter.image.url}
+          alt={frontmatter.image.alt}
+        />
+      </div>
+
+      <p class="text-center text-gray-500">
+        {frontmatter.image.alt}
+      </p>
+    </div>
+    <div class="text-slate-950 w-full mt-16 lg:px-0 px-4">
+      <article
+        class="prose dark:prose-invert max-w-full prose-stone prose-img:rounded-2xl w-full hover:prose-a:text-pink-600"
+      >
+        <slot />
+      </article>
+    </div>
+  </article>
+</BaseLayout>
