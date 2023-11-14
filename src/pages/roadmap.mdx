@@ -1,0 +1,158 @@
+---
+layout: ../layouts/MarkdownPostLayout.astro
+title: "🚀 Intro to C++ - Roadmap"
+description: "A roadmap for getting interview ready with C++"
+author: "Salma"
+image:
+  url: "https://images.unsplash.com/photo-1476973422084-e0fa66ff9456?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDd8fG1hcHxlbnwwfHx8fDE2ODg2NDY5ODF8MA&ixlib=rb-4.0.3&q=80&w=1200%202000w"
+  alt: "Photo by delfi de la Rua / Unsplash"
+id: "2"
+---
+
+import OpenLink from "../components/OpenLink.astro";
+import YoutubeEmbed from "../components/YoutubeEmbed.astro";
+
+## Intro
+
+If I had to learn C++ from scratch, I'd do this -
+
+- Write "Hello World" in C++ - [Link](https://www.programiz.com/cpp-programming/examples/print-sentence) - Read about what every line in a "Hello World" program does and why its important.
+- Time and Space Complexity - [Link](https://www.geeksforgeeks.org/time-complexity-and-space-complexity/).
+- Variables and data types - [Link](https://www.w3schools.com/cpp/cpp_variables.asp), [Link](https://www.geeksforgeeks.org/cpp-variables/) - Learn about how the variables are stored in the memory. Stack vs Heap memory. Learn about how to take inputs in variables and how to print outputs - [Link](https://www.programiz.com/cpp-programming/input-output). Learn about the limits of variables - [Link](https://www.programiz.com/cpp-programming/data-types). Also read about how one data type is converted into another - [Link](https://www.programiz.com/cpp-programming/type-conversion).
+- Opeators and how they interact with different data types - [Link](https://www.programiz.com/cpp-programming/operators).
+- Conditional statements - If / Else - [Link](https://www.programiz.com/cpp-programming/if-else). And learn about relational operators - [Link](https://www.programiz.com/cpp-programming/relational-logical-operators). Try to stack multiple If / Else statements together.
+
+#### Questions
+
+1.  Take 4 marks as input and print average marks - Eg - 18, 19, 19, 18 => 18.5. Make sure you print a floating number.
+2.  Given the first 3 numbers and n, find the nth number of the arithmetic progression.
+3.  Given a number, Write Fizz if the number is divisible by 3, Buzz if the number is divisible by 5 and FizzBuzz if it is divisble by both 3 and 5.
+
+## Loops
+
+- Loops - [For loop](https://www.programiz.com/cpp-programming/for-loop), [While loop, Do while loop](https://www.programiz.com/cpp-programming/do-while-loop). Try to write nested loops.
+- Control flow statements - [Break](https://www.programiz.com/cpp-programming/break-statement), [Continue](https://www.programiz.com/cpp-programming/continue-statement) and [Goto](https://www.programiz.com/cpp-programming/goto).
+- [Switch statements](https://www.programiz.com/cpp-programming/switch-case) and when to use them over If Else.
+
+#### Questions
+
+1.  For a given n, Return the sum of 1 + 2 + 3 + ... + n
+2.  Create a Fahrenheit to Celsius converter
+3.  Create a calculator from scratch. User can input 1,2,3,4 for Addition, Subtraction, Multiplication and Division respectively. User can then input two numbers and the program should return the necessary output.
+4.  Given a number, Check if it is a palindrome.
+5.  Generate the first n numbers of Fibonacci.
+6.  For a given n, Print star pattern (E.g. n = 4)
+
+```
+*
+**
+***
+****
+```
+
+7.  For a given n, Print number pattern (E.g. n = 4)
+
+```
+1
+12
+123
+1234
+```
+
+8.  For a given n, Print alphabet pattern (E.g. n = 4)
+
+```
+A
+AB
+ABC
+ABCD
+```
+
+9.  For a give number n, Print reverse number pattern (E.g. n = 4)
+
+```
+1234
+123
+12
+1
+```
+
+10. For a given n, Print number pattern (E.g. n = 4, Spaces in beginning)
+
+```
+1
+12
+123
+1234
+```
+
+11. For a given n, Print star pattern (E.g. n = 3, Spaces in beginning)
+
+```
+*
+***
+*****
+```
+
+12. For a given n, Print star pattern (E.g. n = 3, Spaces in beginning)
+
+```
+*
+***
+*****
+***
+*
+```
+
+13. For a given n, Print number pattern (E.g. n = 3)
+
+```
+33333
+32223
+32123
+32223
+33333
+```
+
+## Functions
+
+- [Functions](https://www.programiz.com/cpp-programming/function),
+- [Arguments and Return Types](https://www.programiz.com/cpp-programming/user-defined-function-types),
+- What are [default arguments](https://www.programiz.com/cpp-programming/default-argument) and how to [overload a function](https://www.programiz.com/cpp-programming/function-overloading)
+- What is [scope of a variable](https://www.geeksforgeeks.org/scope-of-variables-in-c/) ?
+- How to [call a function by value or reference](https://www.tutorialspoint.com/differences-between-pass-by-value-and-pass-by-reference-in-cplusplus) ?
+
+#### Questions
+
+1.  Make a Celsius to Fahrenheit function that takes a float value of Fahrenheit and returns a Celsius value. It should return the room temperature if no value is passed.
+
+The questions for the topics below are avaialbe in DSA List
+
+<OpenLink name="Salma DSA List" link="https://salma.in/list" />
+
+- Arrays - The basics of [Arrays](https://www.programiz.com/cpp-programming/arrays), How they are [stored in the memory](https://www.tutorialspoint.com/cplusplus/cpp_arrays.htm) and how to use [arrays with functions](https://www.programiz.com/cpp-programming/passing-arrays-function).
+- [Multidimensional Arrays](https://www.programiz.com/cpp-programming/multidimensional-arrays)
+- [Strings](https://www.programiz.com/cpp-programming/strings) - Character arrays and [cstring](https://www.geeksforgeeks.org/cpp-cstring/) library and its popular functions.
+- Searching and Sorting - [Linear Search](https://www.geeksforgeeks.org/linear-search/), [Binary Search](https://www.geeksforgeeks.org/binary-search/), [Selection sort](https://www.geeksforgeeks.org/selection-sort/), [Bubble sort](https://www.geeksforgeeks.org/bubble-sort/), [Insertion sort](https://www.geeksforgeeks.org/insertion-sort/), [Merge Sort](https://www.geeksforgeeks.org/merge-sort/) and [Quick Sort](https://www.geeksforgeeks.org/cpp-program-for-quicksort/). Implement each of them from scratch.
+- [Hashmaps](https://www.geeksforgeeks.org/unordered_map-in-cpp-stl/) - How is it implemented internally, Its hash function.
+- [Pointers](https://www.geeksforgeeks.org/cpp-pointers/) in C++, and how is a constant pointer and pointer to a constant different net ?
+- [Allocate / Deallocate memory dynamically](https://www.geeksforgeeks.org/new-and-delete-operators-in-cpp-for-dynamic-memory/)
+- [Recursion](https://www.programiz.com/cpp-programming/recursion) and [Backtracking](https://www.geeksforgeeks.org/backtracking-algorithms/)
+
+#### Questions
+
+1.  Raise x to the power n using recursion.
+2.  Generate nth fibonacci number.
+3.  Check if a string is palindrome using recursion.
+4.  Implement merge sort and quick sort.
+5.  https://leetcode.com/problems/climbing-stairs/
+
+- [OOPS in C++](https://www.geeksforgeeks.org/object-oriented-programming-in-cpp/)
+
+Once you're done with the these topics, you can move on to Advanced Data Structures and Algorithms like Linked Lists, Stacks, Queues, Binary Trees, BST, Generic Trees, Maps, Priority Queue, DP, Graphs.
+
+And you can check the DSA List for questions that will help you with interviews.
+
+<OpenLink name="Salma DSA List" link="https://salma.in/list" />
+
+Thanks, hope you liked it.

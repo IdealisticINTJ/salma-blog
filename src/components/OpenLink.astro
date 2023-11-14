@@ -1,0 +1,63 @@
+---
+const { link, name } = Astro.props;
+---
+
+<a
+  href={link}
+  target="_blank"
+  class="fill-white dark:fill-gray-900 no-underline"
+>
+  <div
+    class="p-4 w-100 lg:max-w-sm hover:bg-slate-200 rounded-xl border border-gray-300 transition ease-in-out flex justify-between"
+  >
+    <div class="flex gap-3 content-end justify-start">
+      <p class="m-0 w-5 self-center">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"
+          ><rect width="256" height="256" fill="none"></rect><line
+            x1="80"
+            y1="128"
+            x2="176"
+            y2="128"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="24"></line><path
+            d="M104,176H64a48,48,0,0,1,0-96h40"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="24"></path><path
+            d="M152,80h40a48,48,0,0,1,48,48h0a48,48,0,0,1-48,48H152"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="24"></path></svg
+        >
+      </p>
+      <p class="m-0 inline-block self-center">{name}</p>
+    </div>
+    <div class="flex w-8 p-2 select-none pointer-events-none">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"
+        ><rect width="256" height="256" fill="none"></rect><line
+          x1="64"
+          y1="192"
+          x2="192"
+          y2="64"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="24"></line><polyline
+          points="88 64 192 64 192 168"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="24"></polyline></svg
+      >
+    </div>
+  </div>
+</a>

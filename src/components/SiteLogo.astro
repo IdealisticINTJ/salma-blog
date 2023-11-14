@@ -1,0 +1,21 @@
+---
+import { Image } from "astro:assets";
+import { siteTitle } from "../config";
+import siteLogo from "../images/bg.png";
+const showSiteLogo = false;
+---
+
+{
+  showSiteLogo ? (
+    <a href="/">
+      <Image src={siteLogo} alt={siteTitle} class="h-6 cursor-pointer" />
+    </a>
+  ) : (
+    <a
+      href="/"
+      class="text-gray-900 select-none dark:text-gray-50 dark:hover:text-gray-300 hover:text-gray-600 transition fade ease-in uppercase font-semibold tracking-wider"
+    >
+      {siteTitle}
+    </a>
+  )
+}

@@ -1,0 +1,14 @@
+---
+import { links } from "../config";
+---
+
+{
+  links.map((link) => (
+    <a
+      href={link.url}
+      class="text-gray-900 dark:text-gray-50 dark:hover:text-gray-300 hover:text-gray-600 transition fade ease-in cursor-pointer"
+    >
+      {link.label}
+    </a>
+  ))
+}
