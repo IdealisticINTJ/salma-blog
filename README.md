@@ -9,9 +9,9 @@ Currently, a WIP.
 
 P0:
 
-~~1. Add the rest of the pages.~~
+1. ~~Add the rest of the pages.~~
 
-~~2. Copy over the content from current salma.in.~~
+2. ~~Copy over the content from current salma.in.~~
 
 P1:
 
