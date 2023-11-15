@@ -14,12 +14,13 @@ P0:
 
 P1:
 
-1. Add Work Experience, Projects and Skills to the landing page.
+1. Add Work Experience, Projects and Skills to the landing page, *dedicated Portfolio with Tech Stack
 2. Add a Topmate page allowing user to click on Buy Now.
 
 P2:
 
 1. Publish it (and soon).
+2. Custom domain!
 
 P3:
 
