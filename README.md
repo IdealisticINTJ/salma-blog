@@ -16,6 +16,7 @@ P1:
 
 1. Add Work Experience, Projects and Skills to the landing page, *dedicated Portfolio with Tech Stack
 2. Add a Topmate page allowing user to click on Buy Now.
+3. Set up a AIKB soon, digital garden with tags and categories for all bits. 
 
 P2:
 
