@@ -1,6 +1,6 @@
 # Salma.in Blog / Website
 
-[![View on the Web]](salma-blog.vercel.app)
+[![View on the Web]](https://salma-blog.vercel.app/)
 
 My blog written in Astro, * the pages are written in .astro, and the blogs are written in markdown.
 Currently, a WIP.
