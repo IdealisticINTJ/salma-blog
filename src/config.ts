@@ -1,6 +1,6 @@
 // Header options
 export const siteTitle: string = "Salma";
-export const courseSite: string = "";
+export const projectSite: string = "";
 export const pageTitle: string = "Salma - Machine Learning Engineer, Developer Advocate";
 export const links = [
   { url: "/", label: "Home" },
