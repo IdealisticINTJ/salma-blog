@@ -13,11 +13,11 @@ P0:
 
 2. ~~Copy over the content from current salma.in.~~
 
-P1:
+P1: 
 
 1. Update the MenuIcon to use one SVG with 2 different paths - One for open and one for close instead of using 2 different SVGs.
 2. Use a better (clarity) photo for the landing page.
-3. Show only the 3 recent posts and add a view all posts button next to it which redirects to /posts. (I don't think I want this page in the navbar.)
+3. ~~Show only the 3 recent posts and add a view all posts button next to it which redirects to /posts. (I don't think I want this page in the navbar.)~~
 
 P2:
 
